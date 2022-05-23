@@ -33,6 +33,17 @@
 
 *Credits: https://reddit.com/r/pcmasterrace/comments/uvtdbx/cat_bin/i9nn1pq/*
 
+
+## Changing icons using script
+1. Clone or download repository
+
+2. Navigate to script directory and open seticons.bat file as an administrator
+
+3. Input name of the desired theme, paying attention to spelling
+
+4. press enter and enjoy (sometimes it may be required to restart pc)
+  
+
 ## Contribution
 1. Fork the repo
 2. Make directory with the name of your icon theme, inside the `themes` directory. Make sure to have the following file structure:
