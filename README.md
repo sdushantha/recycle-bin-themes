@@ -14,14 +14,14 @@
 <summary><b>Patrick Star</b></summary>
 <img src="themes/patrick-star/preview/patrick-star.gif">
 <br>
-<b><a href="https://github.com/sdushantha/windows-recyclebins/tree/main/themes/patrick-star">[View Icons]</a></b>
+<b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/patrick-star">[View Icons]</a></b>
 </details>
 
 <details>
 <summary><b>Pop Cat</b></summary>
 <img src="themes/pop-cat/preview/pop-cat.gif">
 <br>
-<b><a href="https://github.com/sdushantha/windows-recyclebins/tree/main/themes/pop-cat">[View Icons]</a></b>
+<b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/pop-cat">[View Icons]</a></b>
 </details>
 
 ## How to change the Recycle Bin icon
