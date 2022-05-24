@@ -5,6 +5,13 @@
 <p align="center">
 <span>Inspired by <a href="https://reddit.com/r/pcmasterrace/comments/uvtdbx/cat_bin/">this Reddit post</a> by <a href="https://reddit.com/user/DARKplayz_">u/DARKplayz_</a></span>
 </p>
+<p align="center">
+<span>Script extended from <a href="https://www.reddit.com/r/pcmasterrace/comments/uw2se4/comment/i9qby36/?utm_source=share&utm_medium=web2x&context=3/">this Reddit post</a> by <a href="https://reddit.com/user/ur_opinion_is_wrong">u/ur_opinion_is_wrong</a></span>
+</p>
+<p align="center">
+<span>And by all the forks from <a href="https://github.com/sdushantha/recycle-bin-themes">this repository</a> by <a href="https://reddit.com/user/rushedcar">u/rushedcar</a></span>
+</p>
+
 
 ## Preview Available Themes
 
