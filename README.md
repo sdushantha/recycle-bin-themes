@@ -50,14 +50,7 @@
 
 ## Or run in powershell:
 ```
-iwr -outf ( New-Item -Path "$env:USERPROFILE\icons\pop-cat-full.ico" -Force ) 'https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/pop-cat/pop-cat-full.ico'
-iwr -outf ( New-Item -Path "$env:USERPROFILE\icons\pop-cat-empty.ico" -Force ) 'https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/pop-cat/pop-cat-empty.ico'
-Set-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon\' -Name 'empty' -value '%USERPROFILE%\icons\pop-cat-empty.ico,0'
-Set-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon\' -Name 'full' -value '%USERPROFILE%\icons\pop-cat-full.ico,0'
-New-Item -Path . -Name "newbintestfile.txt" -ItemType "file"
-Add-Type -AssemblyName Microsoft.VisualBasic
-[Microsoft.VisualBasic.FileIO.FileSystem]::DeleteFile('newbintestfile.txt','OnlyErrorDialogs','SendToRecycleBin')
-
+iwr -useb https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/binutil.ps1 | iex
 ```
 
 
