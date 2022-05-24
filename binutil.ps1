@@ -177,8 +177,7 @@ Write-Host "Setting Registry"
 Invoke-WebRequest -Uri $url -OutFile ( New-Item -Path "$output" -Force )
 Set-ItemProperty -Path "Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon" -Name "(Default)" -Value "$env:userprofile\icons\dachshund-empty.ico,0"
 Set-ItemProperty -Path "Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon" -Name "full" -Value "$env:userprofile\icons\dachshund-full.ico,0"
-Set-ItemProperty -Path "Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon" -Name "empty" -Value "$env:userprofile\icons\
-dachshund-empty.ico,0"
+Set-ItemProperty -Path "Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon" -Name "empty" -Value "$env:userprofile\icons\dachshund-empty.ico,0"
 }
 
 if ($choice -eq '9')
