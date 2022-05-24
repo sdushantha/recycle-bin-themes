@@ -50,7 +50,7 @@ $bulbasaulfull = "https://raw.githubusercontent.com/technoluc/recycle-bin-themes
 
 #Get user choice
 Write-Host "Please choose your theme:"
-$choice = Read-Host "Enter [1]Pop-Cat, [2]Patrik Star, [3]Kirby [4]Sword Kirby [5]Bulbasaul or [6]Default"
+$choice = Read-Host "Enter [1]Pop-Cat, [2]Patrik Star, [3]Kirby, [4]Sword Kirby, [5]Bulbasaul or [6]Default"
 if ($choice -eq '1' -or $choice -eq '2' -or $choice -eq '3' -or $choice -eq '4' -or $choice -eq '5' -or $choice -eq '6') {
 Write-Host "You picked" $choice
 }else{
