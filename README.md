@@ -11,18 +11,33 @@
 > Click to expand
 
 <details>
-<summary><b>Patrick Star</b></summary>
-<img src="themes/patrick-star/preview/patrick-star.gif">
-<br>
-<b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/patrick-star">[View Icons]</a></b>
-</details>
-
-<details>
 <summary><b>Pop Cat</b></summary>
 <img src="themes/pop-cat/preview/pop-cat.gif">
 <br>
-<b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/pop-cat">[View Icons]</a></b>
+<b><a href="https://github.com/technoluc/recycle-bin-themes/tree/main/themes/pop-cat">[View Icons]</a></b>
 </details>
+
+<details>
+<summary><b>Patrick Star</b></summary>
+<img src="themes/patrick-star/preview/patrick-star.gif">
+<br>
+<b><a href="https://github.com/technoluc/recycle-bin-themes/tree/main/themes/patrick-star">[View Icons]</a></b>
+</details>
+
+<details>
+<summary><b>BulbaSaul</b></summary>
+<img src="themes/bulbasaul/preview/bulbasaul.gif">
+<br>
+<b><a href="https://github.com/technoluc/recycle-bin-themes/tree/main/themes/bulbasaul">[View Icons]</a></b>
+</details>
+
+<details>
+<summary><b>Sword-Kirby</b></summary>
+<img src="themes/sword-kirby/preview/Preview.gif">
+<br>
+<b><a href="https://github.com/technoluc/recycle-bin-themes/tree/main/themes/sword-kirby">[View Icons]</a></b>
+</details>
+
 
 ## How to change the Recycle Bin icon
 1. Download the two icons ending with `empty.ico` and `full.ico`
