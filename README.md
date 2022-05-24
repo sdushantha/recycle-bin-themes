@@ -33,7 +33,7 @@
 
 <details>
 <summary><b>Sword-Kirby</b></summary>
-<img src="themes/sword-kirby/preview/Preview.gif">
+<img src="themes/sword-kirby/preview/sword-kirby.gif">
 <br>
 <b><a href="https://github.com/technoluc/recycle-bin-themes/tree/main/themes/sword-kirby">[View Icons]</a></b>
 </details>
