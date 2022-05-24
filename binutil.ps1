@@ -164,7 +164,7 @@ Set-ItemProperty -Path "Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\C
 Set-ItemProperty -Path "Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon" -Name "empty" -Value "$env:userprofile\icons\minecraft-chest-empty.ico,0"
 }
 
-if ($choice -eq '6')
+if ($choice -eq '7')
 {
 Write-Host "Downloading Dachshund Empty Icon"
 $url = $dachshundempty
