@@ -69,13 +69,13 @@ $full_icon_path = "$recycle_bin_themes_path\$full_icon_file_name"
 
 mkdir -Force $recycle_bin_themes_path | Out-Null
 
-  if (-not(Test-Path -Path $empty_icon_path -PathType Leaf)) {
-    Invoke-WebRequest $empty_icon_url -OutFile $empty_icon_path 
-  }
+if (-not(Test-Path -Path $empty_icon_path -PathType Leaf)) {
+  Invoke-WebRequest $empty_icon_url -OutFile $empty_icon_path 
+}
 
-  if (-not(Test-Path -Path $full_icon_path -PathType Leaf)) {
-    Invoke-WebRequest $full_icon_url -OutFile $full_icon_path 
-  }
+if (-not(Test-Path -Path $full_icon_path -PathType Leaf)) {
+  Invoke-WebRequest $full_icon_url -OutFile $full_icon_path 
+}
 
 
 # Modify the Registry to use the chosen icons for the Recycle Bin
