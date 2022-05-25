@@ -1,6 +1,7 @@
 # Created by Siddharth Dushantha
 # https://github.com/sdushantha/recycle-bin-themes
 #
+
 $version = "v1.0.0"
 $pictures_path = [Environment]::GetFolderPath("MyPictures")
 # This is where we will store the icons

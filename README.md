@@ -12,14 +12,14 @@
 
 <details>
 <summary><b>Patrick Star</b></summary>
-<img src="themes/patrick-star/preview/patrick-star.gif">
+<img src="themes/patrick-star/patrick-star.gif">
 <br>
 <b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/patrick-star">[View Icons]</a></b>
 </details>
 
 <details>
 <summary><b>Pop Cat</b></summary>
-<img src="themes/pop-cat/preview/pop-cat.gif">
+<img src="themes/pop-cat/pop-cat.gif">
 <br>
 <b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/pop-cat">[View Icons]</a></b>
 </details>
@@ -45,8 +45,7 @@
 your-theme-name/
 ├── your-theme-name-empty.ico
 ├── your-theme-name-full.ico
-└── preview
-    └── your-theme-name.gif  
+└── preview.gif  
 ```
 4. Create GIF of your theme in action. Make sure you set the your wallpaper to the color `#2d7d9a`. This is so that all the previews have a similar style.
 3. Send a pull request :)
