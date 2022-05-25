@@ -21,14 +21,15 @@ Write-Host @"
 "@ -ForegroundColor Magenta
 
 $textInfo = (Get-Culture).TextInfo
-Write-Host "Select a theme:" -ForegroundColor Magenta
+Write-Host "Select a theme:" -ForegroundColor Yellow
 for ($index = 0; $index -lt $supported_themes.count; $index++) {
   $theme_name = $textInfo.ToTitleCase($($supported_themes[$index])).replace("-", " ")
   Write-Host " [$($index+1)] $theme_name" -ForegroundColor Magenta
 }
 Write-Host " [0] Default" -ForegroundColor Magenta
 
-$choice = Read-Host "`nChoice"
+$choice = $(Write-Host "`nChoice: " -ForegroundColor Yellow -NoNewLine; Read-Host)
+
 if (-not($choice -ge 0 -and $choice -le $supported_themes.count)) {
   Write-Host "Error: '$choice' is an invalid choice"
   exit 
@@ -50,7 +51,7 @@ if ($choice -eq 0) {
 
   # Reload Explorer
   Stop-Process -ProcessName explorer -Force
-  Write-Host "Changed Recycle Bin theme back to default"
+  Write-Host "Changed Recycle Bin theme back to default" -ForegroundColor Green
   exit
 }
 
@@ -68,9 +69,14 @@ $full_icon_path = "$recycle_bin_themes_path\$full_icon_file_name"
 
 mkdir -Force $recycle_bin_themes_path | Out-Null
 
-Invoke-WebRequest $empty_icon_url -OutFile $empty_icon_path 
+  if (-not(Test-Path -Path $empty_icon_path -PathType Leaf)) {
+    Invoke-WebRequest $empty_icon_url -OutFile $empty_icon_path 
+  }
 
-Invoke-WebRequest $full_icon_url -OutFile $full_icon_path 
+  if (-not(Test-Path -Path $full_icon_path -PathType Leaf)) {
+    Invoke-WebRequest $full_icon_url -OutFile $full_icon_path 
+  }
+
 
 # Modify the Registry to use the chosen icons for the Recycle Bin
 writeToDefaultIconRegistry "(Default)" "$empty_icon_path,0"
@@ -80,4 +86,4 @@ writeToDefaultIconRegistry "empty" "$empty_icon_path,0"
 # Reload Explorer
 Stop-Process -ProcessName explorer -Force
 
-Write-Host "Changed Recycle Bin theme to $($textInfo.ToTitleCase($selected_theme).replace("-", " "))"
+Write-Host "Changed Recycle Bin theme to $($textInfo.ToTitleCase($selected_theme).replace("-", " "))" -ForegroundColor Green
