@@ -31,6 +31,13 @@
 <b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/kirby">[View Icons]</a></b>
 </details>
 
+<details>
+<summary><b>Dachshund</b></summary>
+<img src="themes/dachshund/dachshund.gif">
+<br>
+<b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/dachshund">[View Icons]</a></b>
+</details>
+
 ## How to change the Recycle Bin icon
 ### Method 1
 1. Download the two icons ending with `empty.ico` and `full.ico`
