@@ -6,7 +6,8 @@
 #Check for Administrator privileges and if not, open powershell as admin and rerun the script
 Write-Host "Checking for elevated privileges" 
 If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]"Administrator")) {
-    Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
+    Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs;
+    exit
 }
 
 # Set the working location to the same location as the script
