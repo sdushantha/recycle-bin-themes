@@ -59,6 +59,13 @@
 <b><a href="https://github.com/technoluc/recycle-bin-themes/tree/main/themes/dachshund">[View Icons]</a></b>
 </details>
 
+<details>
+<summary><b>French Fries</b></summary>
+<img src="themes/french-fries/french-fries.gif">
+<br>
+<b><a href="https://github.com/technoluc/recycle-bin-themes/tree/main/themes/french-fries">[View Icons]</a></b>
+</details>
+
 ## How to change the Recycle Bin icon
 1. Download the two icons ending with `empty.ico` and `full.ico`
 2. Open the the **Settings** app and go to **Personalization** > **Themes** > **Desktop Icon Settings** > **Change Icon and Apply Icons**
