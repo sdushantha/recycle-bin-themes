@@ -33,9 +33,16 @@
 
 <details>
 <summary><b>Dachshund</b></summary>
-<img src="themes/dachshund/dachshund.gif">
+<img src="themes/dachshund/preview.gif">
 <br>
 <b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/dachshund">[View Icons]</a></b>
+</details>
+
+<details>
+<summary><b>Kanna</b></summary>
+<img src="themes/kanna/preview.gif">
+<br>
+<b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/kanna">[View Icons]</a></b>
 </details>
 
 ## How to change the Recycle Bin icon
