@@ -24,6 +24,13 @@
 <b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/pop-cat">[View Icons]</a></b>
 </details>
 
+<details>
+<summary><b>Kirby</b></summary>
+<img src="themes/kirby/preview.gif">
+<br>
+<b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/kirby">[View Icons]</a></b>
+</details>
+
 ## How to change the Recycle Bin icon
 1. Download the two icons ending with `empty.ico` and `full.ico`
 2. Open the the **Settings** app and go to **Personalization** > **Themes** > **Desktop Icon Settings** > **Change Icon and Apply Icons**
