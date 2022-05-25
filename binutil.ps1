@@ -10,7 +10,7 @@ if (-not $IsAdmin){
     Write-Host "The script is NOT running as Administrator, restarting PowerShell as Administrator..."
     $cmd = $MyInvocation.MyCommand.Path + " -Parameter1 $Parameter1 -Parameter2 $Parameter2 -Parameter3 $Parameter3"
     $arguments = "-NoProfile -NoExit -Command ""& {$cmd} """ 
-    Start-Process "$psHome\powershell.exe" -Verb Runas -ArgumentList $arguments -WorkingDirectory $localpath -ErrorAction 'stop'
+    Start-Process "$psHome\powershell.exe" -Verb Runas -ArgumentList $arguments -ErrorAction 'stop'
     Break              
 }
 else{
