@@ -12,19 +12,27 @@
 
 <details>
 <summary><b>Patrick Star</b></summary>
-<img src="themes/patrick-star/preview/patrick-star.gif">
+<img src="themes/patrick-star/preview.gif">
 <br>
 <b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/patrick-star">[View Icons]</a></b>
 </details>
 
 <details>
 <summary><b>Pop Cat</b></summary>
-<img src="themes/pop-cat/preview/pop-cat.gif">
+<img src="themes/pop-cat/preview.gif">
 <br>
 <b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/pop-cat">[View Icons]</a></b>
 </details>
 
+<details>
+<summary><b>Kirby</b></summary>
+<img src="themes/kirby/preview.gif">
+<br>
+<b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/kirby">[View Icons]</a></b>
+</details>
+
 ## How to change the Recycle Bin icon
+### Method 1
 1. Download the two icons ending with `empty.ico` and `full.ico`
 2. Open the the **Settings** app and go to **Personalization** > **Themes** > **Desktop Icon Settings** > **Change Icon and Apply Icons**
 3. Change the icons for **Recycle Bin (full)** the icon ending with `full.ico` and **Recycle Bin (empty)** with `empty.ico`
@@ -33,6 +41,10 @@
 
 *Credits: https://reddit.com/r/pcmasterrace/comments/uvtdbx/cat_bin/i9nn1pq/*
 
+### Method 2
+1. Download the [`RecycleBinThemes.ps1`](./RecycleBinThemes.ps1) file
+2. Right click the file > Run with Powershell
+
 ## Contribution
 1. Fork the repo
 2. Make directory with the name of your icon theme, inside the `themes` directory. Make sure to have the following file structure:
@@ -40,8 +52,8 @@
 your-theme-name/
 ├── your-theme-name-empty.ico
 ├── your-theme-name-full.ico
-└── preview
-    └── your-theme-name.gif  
+└── preview.gif  
 ```
+3. Add your theme name to the [`RecycleBinThemes.ps1`](./RecycleBinThemes.ps1) file to the `$supported_themes` array
 4. Create GIF of your theme in action. Make sure you set the your wallpaper to the color `#2d7d9a`. This is so that all the previews have a similar style.
-3. Send a pull request :)
+5. Send a pull request :)
