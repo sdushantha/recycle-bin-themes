@@ -36,7 +36,7 @@
 
 ### Method 2
 1. Download the [`RecycleBinThemes.ps1`](./RecycleBinThemes.ps1) file
-2. Right click > Run with Powershell
+2. Right click the file > Run with Powershell
 
 ## Contribution
 1. Fork the repo
