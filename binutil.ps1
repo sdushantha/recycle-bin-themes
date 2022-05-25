@@ -3,18 +3,13 @@
 # PLEASE SEE https://www.reddit.com/r/pcmasterrace/comments/uw2se4/i_made_a_patrick_star_version_of_the_cat_bin/ #
 ##################################################################################################################
 
-# Check if script is running as Adminstrator and if not use RunAs
-Write-Host "Checking if the script is running as Administrator"
-$IsAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]"Administrator")
-if (-not $IsAdmin){
-    Write-Host "The script is NOT running as Administrator, restarting PowerShell as Administrator..."
-    $cmd = $MyInvocation.MyCommand.Path + " -Parameter1 $Parameter1 -Parameter2 $Parameter2 -Parameter3 $Parameter3"
-    $arguments = "-NoProfile -NoExit -Command ""& {$cmd} """ 
-    Start-Process "$psHome\powershell.exe" -Verb Runas -ArgumentList $arguments -ErrorAction 'stop'
-    Break              
-}
-else{
-    Write-Host "The script is already running as Administrator"
+# Self-elevate the script if required
+if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] 'Administrator')) {
+ if ([int](Get-CimInstance -Class Win32_OperatingSystem | Select-Object -ExpandProperty BuildNumber) -ge 6000) {
+  $CommandLine = "-File `"" + $MyInvocation.MyCommand.Path + "`" " + $MyInvocation.UnboundArguments
+  Start-Process -FilePath PowerShell.exe -Verb Runas -ArgumentList $CommandLine
+  Exit
+ }
 }
 
 # Set the working location to the same location as the script
