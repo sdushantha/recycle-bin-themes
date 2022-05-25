@@ -3,11 +3,14 @@
 # PLEASE SEE https://www.reddit.com/r/pcmasterrace/comments/uw2se4/i_made_a_patrick_star_version_of_the_cat_bin/ #
 ##################################################################################################################
 
-#Check for Administrator privileges and if not, open powershell as admin and rerun the script
-Write-Host "Checking for elevated privileges" 
-If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]"Administrator")) {
-    Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs;
-    exit
+
+# Self-elevate the script if required
+if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] 'Administrator')) {
+ if ([int](Get-CimInstance -Class Win32_OperatingSystem | Select-Object -ExpandProperty BuildNumber) -ge 6000) {
+  $CommandLine = "-File `"" + $MyInvocation.MyCommand.Path + "`" " + $MyInvocation.UnboundArguments
+  Start-Process -FilePath PowerShell.exe -Verb Runas -ArgumentList $CommandLine
+  Exit
+ }
 }
 
 # Set the working location to the same location as the script
