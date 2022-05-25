@@ -70,6 +70,13 @@
 <b><a href="https://github.com/technoluc/recycle-bin-themes/tree/main/themes/bulbasaul">[View Icons]</a></b>
 </details>
 
+<details>
+<summary><b>Kanna</b></summary>
+<img src="themes/kanna/preview.gif">
+<br>
+<b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/kanna">[View Icons]</a></b>
+</details>
+
 ## How to change the Recycle Bin icon
 ### Method 1
 1. Download the two icons ending with `empty.ico` and `full.ico`
