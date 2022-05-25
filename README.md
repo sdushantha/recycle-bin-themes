@@ -12,14 +12,14 @@
 
 <details>
 <summary><b>Patrick Star</b></summary>
-<img src="themes/patrick-star/patrick-star.gif">
+<img src="themes/patrick-star/preview.gif">
 <br>
 <b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/patrick-star">[View Icons]</a></b>
 </details>
 
 <details>
 <summary><b>Pop Cat</b></summary>
-<img src="themes/pop-cat/pop-cat.gif">
+<img src="themes/pop-cat/preview.gif">
 <br>
 <b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/pop-cat">[View Icons]</a></b>
 </details>
