@@ -25,6 +25,7 @@
 </details>
 
 ## How to change the Recycle Bin icon
+### Method 1
 1. Download the two icons ending with `empty.ico` and `full.ico`
 2. Open the the **Settings** app and go to **Personalization** > **Themes** > **Desktop Icon Settings** > **Change Icon and Apply Icons**
 3. Change the icons for **Recycle Bin (full)** the icon ending with `full.ico` and **Recycle Bin (empty)** with `empty.ico`
@@ -32,6 +33,10 @@
 4. Click on each file (**Default**, **empty**, and **full**) and in the **Value Data** add a **comma** and **0** at the end after **.ico** and hit okay (it will look like `.ico,0`)
 
 *Credits: https://reddit.com/r/pcmasterrace/comments/uvtdbx/cat_bin/i9nn1pq/*
+
+### Method 2
+1. Download the [`RecycleBinThemes.ps1`](./RecycleBinThemes.ps1) file
+2. Right click > Run with Powershell
 
 ## Contribution
 1. Fork the repo
