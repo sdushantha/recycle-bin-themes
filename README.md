@@ -32,13 +32,6 @@
 </details>
 
 <details>
-<summary><b>Sword-Kirby</b></summary>
-<img src="themes/sword-kirby/preview.gif">
-<br>
-<b><a href="https://github.com/technoluc/recycle-bin-themes/tree/main/themes/sword-kirby">[View Icons]</a></b>
-</details>
-
-<details>
 <summary><b>Minecraft Chest</b></summary>
 <img src="themes/minecraft-chest/preview.gif">
 <br>
