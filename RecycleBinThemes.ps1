@@ -8,7 +8,7 @@ $pictures_path = [Environment]::GetFolderPath("MyPictures")
 $recycle_bin_themes_path = "$pictures_path\RecycleBinThemes"
 # Hide the progressbar from Invoke-WebRequest
 $ProgressPreference = "SilentlyContinue"
-$supported_themes = @("patrick-star", "pop-cat", "kirby", "kanna", "sword-kirby")
+$supported_themes = @("patrick-star", "pop-cat", "kirby", "kanna", "sword-kirby", "minecraft-chest")
 
 Write-Host @"
   ___                _       ___ _        _____ _                     

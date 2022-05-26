@@ -45,6 +45,13 @@
 <b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/sword-kirby">[View Icons]</a></b>
 </details>
 
+<details>
+<summary><b>Minecraft Chest</b></summary>
+<img src="themes/minecraft-chest/preview.gif">
+<br>
+<b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/minecraft-chest">[View Icons]</a></b>
+</details>
+
 ## How to change the Recycle Bin icon
 ### Method 1
 1. Download the two icons ending with `empty.ico` and `full.ico`
