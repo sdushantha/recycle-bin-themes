@@ -47,9 +47,9 @@
 
 <details>
 <summary><b>French Fries</b></summary>
-<img src=“themes/french-fries/preview.gif”>
+<img src="themes/french-fries/preview.gif">
 <br>
-<b><a href=“https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/french-fries”>[View Icons]</a></b>
+<b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/french-fries">[View Icons]</a></b>
 </details>
 
 <details>
