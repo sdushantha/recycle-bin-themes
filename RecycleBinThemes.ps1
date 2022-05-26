@@ -2,7 +2,7 @@
 # https://github.com/sdushantha/recycle-bin-themes
 #
 
-$version = "v1.0.0"
+$version = "v1.0.1"
 $pictures_path = [Environment]::GetFolderPath("MyPictures")
 # This is where we will store the icons
 $recycle_bin_themes_path = "$pictures_path\RecycleBinThemes"
@@ -67,9 +67,13 @@ $full_icon_path = "$recycle_bin_themes_path\$full_icon_file_name"
 
 mkdir -Force $recycle_bin_themes_path | Out-Null
 
-Invoke-WebRequest $empty_icon_url -OutFile $empty_icon_path 
+if (-not(Test-Path -Path $empty_icon_path -PathType Leaf)) {
+  Invoke-WebRequest $empty_icon_url -OutFile $empty_icon_path 
+}
 
-Invoke-WebRequest $full_icon_url -OutFile $full_icon_path 
+if (-not(Test-Path -Path $full_icon_path -PathType Leaf)) {
+  Invoke-WebRequest $full_icon_url -OutFile $full_icon_path 
+}
 
 # Modify the Registry to use the chosen icons for the Recycle Bin
 writeToDefaultIconRegistry "(Default)" "$empty_icon_path,0"
