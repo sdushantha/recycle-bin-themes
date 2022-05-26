@@ -3,12 +3,11 @@
 #
 
 $version = "v1.0.1"
-$pictures_path = [Environment]::GetFolderPath("MyPictures")
 # This is where we will store the icons
-$recycle_bin_themes_path = "$pictures_path\RecycleBinThemes"
+$recycle_bin_themes_path = "$env:userprofile\Pictures\RecycleBinThemes"
 # Hide the progressbar from Invoke-WebRequest
 $ProgressPreference = "SilentlyContinue"
-$supported_themes = @("patrick-star", "pop-cat", "kirby", "kanna", "sword-kirby", "french-fries")
+$supported_themes = @("patrick-star", "pop-cat", "kirby", "kanna", "sword-kirby", "french-fries", "minecraft-chest")
 
 Write-Host @"
   ___                _       ___ _        _____ _                     
