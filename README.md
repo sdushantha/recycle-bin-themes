@@ -46,6 +46,13 @@
 </details>
 
 <details>
+<summary><b>French Fries</b></summary>
+<img src=“themes/french-fries/preview.gif”>
+<br>
+<b><a href=“https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/french-fries”>[View Icons]</a></b>
+</details>
+
+<details>
 <summary><b>Minecraft Chest</b></summary>
 <img src="themes/minecraft-chest/preview.gif">
 <br>
