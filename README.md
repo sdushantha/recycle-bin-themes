@@ -32,24 +32,10 @@
 </details>
 
 <details>
-<summary><b>Minecraft Chest</b></summary>
-<img src="themes/minecraft-chest/preview.gif">
-<br>
-<b><a href="https://github.com/technoluc/recycle-bin-themes/tree/main/themes/minecraft-chest">[View Icons]</a></b>
-</details>
-
-<details>
 <summary><b>Dachshund</b></summary>
 <img src="themes/dachshund/preview.gif">
 <br>
 <b><a href="https://github.com/technoluc/recycle-bin-themes/tree/main/themes/dachshund">[View Icons]</a></b>
-</details>
-
-<details>
-<summary><b>French Fries</b></summary>
-<img src="themes/french-fries/french-fries.gif">
-<br>
-<b><a href="https://github.com/technoluc/recycle-bin-themes/tree/main/themes/french-fries">[View Icons]</a></b>
 </details>
 
 <details>
