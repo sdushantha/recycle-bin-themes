@@ -43,6 +43,10 @@
 <img src="themes/sword-kirby/preview.gif">
 <br>
 <b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/sword-kirby">[View Icons]</a></b>
+<summary><b>Dachshund</b></summary>
+<img src="themes/dachshund/dachshund.gif">
+<br>
+<b><a href="https://github.com/sdushantha/recycle-bin-themes/tree/main/themes/dachshund">[View Icons]</a></b>
 </details>
 
 ## How to change the Recycle Bin icon
