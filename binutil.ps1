@@ -3,8 +3,7 @@
 # Edited by TechnoLuc
 #
 
-$version = "v1.1.0"
-#$pictures_path = [Environment]::GetFolderPath("MyPictures")
+$version = "v2.0.0"
 # This is where we will store the icons
 $recycle_bin_themes_path = "$env:userprofile\Pictures\RecycleBinThemes"
 # Hide the progressbar from Invoke-WebRequest
