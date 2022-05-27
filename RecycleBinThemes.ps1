@@ -7,7 +7,7 @@ $version = "v1.0.1"
 $recycle_bin_themes_path = "$env:userprofile\Pictures\RecycleBinThemes"
 # Hide the progressbar from Invoke-WebRequest
 $ProgressPreference = "SilentlyContinue"
-$supported_themes = @("patrick-star", "pop-cat", "kirby", "kanna", "sword-kirby", "french-fries", "minecraft-chest", "dachshund")
+$supported_themes = @("patrick-star", "pop-cat", "kirby", "kanna", "sword-kirby", "french-fries", "minecraft-chest")
 
 Write-Host @"
   ___                _       ___ _        _____ _                     
@@ -55,8 +55,8 @@ if ($choice -eq 0) {
 
 $selected_theme = $supported_themes[$choice-1]
 
-$empty_icon_url = "https://raw.githubusercontent.com/sdushantha/recycle-bin-themes/main/themes/$selected_theme/$selected_theme-empty.ico"
-$full_icon_url = "https://raw.githubusercontent.com/sdushantha/recycle-bin-themes/main/themes/$selected_theme/$selected_theme-full.ico"
+$empty_icon_url = "https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/$selected_theme/$selected_theme-empty.ico"
+$full_icon_url = "https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/$selected_theme/$selected_theme-full.ico"
 
 $empty_icon_file_name= $empty_icon_url.Split("/")[-1]
 $full_icon_file_name= $full_icon_url.Split("/")[-1]
