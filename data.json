@@ -1,0 +1,39 @@
+{
+    "themes": {
+        "pop-cat": {
+            "theme-name": "Pop Cat",
+            "description": "",
+            "creator": "u/DARKplayz_"
+        },
+        "patrick-star": {
+            "theme-name": "Patrick Star",
+            "description": "",
+            "creator": "Siddharth Dushantha"
+        },
+        "kirby": {
+            "theme-name": "Kirby",
+            "description": "",
+            "creator": "Bradley Andrew Marques"
+        },
+        "kanna": {
+            "theme-name": "Kanna",
+            "description": "",
+            "creator": "u/ThatHypedPerson"
+        },
+        "sword-kirby": {
+            "theme-name": "Kirby with a sword",
+            "description": "",
+            "creator": "crazypotato3610"
+        },
+        "french-fries": {
+            "theme-name": "French Fries",
+            "description": "",
+            "creator": "technoluc"
+        },
+        "minecraft-chest": {
+            "theme-name": "Minecraft Chest",
+            "description": "",
+            "creator": "Siddharth Dushantha"
+        }
+    }
+}
