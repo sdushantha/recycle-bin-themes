@@ -4,7 +4,7 @@
 #
 
 param(
-[string]$selected_theme
+[string]$choice
 )
 
 $version = "v2.0.0"
