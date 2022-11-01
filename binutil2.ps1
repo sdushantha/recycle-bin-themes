@@ -3,9 +3,7 @@
 # Edited by TechnoLuc
 #
 
-param(
-[string]$choice
-)
+$selected_theme = $args[0]
 
 $version = "v2.0.0"
 # This is where we will store the icons
