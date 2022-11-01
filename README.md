@@ -81,19 +81,26 @@
 </details>
 
 ## How to change the Recycle Bin icon
-### Method 1
-1. Download the two icons ending with `empty.ico` and `full.ico`
-2. Open the the **Settings** app and go to **Personalization** > **Themes** > **Desktop Icon Settings** > **Change Icon and Apply Icons**
-3. Change the icons for **Recycle Bin (full)** the icon ending with `full.ico` and **Recycle Bin (empty)** with `empty.ico`
-3. Open [Registry Editor](https://support.microsoft.com/en-us/windows/how-to-open-registry-editor-in-windows-10-deab38e6-91d6-e0aa-4b7c-8878d9e07b11) and go to **HKey_Current_User** > **Software** > **Microsoft** > **Windows** > **CurrentVersion** > **Explorer** > **CLSID** > **{645FF...}** > **DefaultIcon**
-4. Click on each file (**Default**, **empty**, and **full**) and in the **Value Data** add a **comma** and **0** at the end after **.ico** and hit okay (it will look like `.ico,0`)
+
+## Run in powershell:
+```bat
+iwr -useb https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/binutil.ps1 | iex
+```
+Or even shorter:
+
+```bat
+irm bin.technoluc.nl | iex
+```
+
+### What it does
+1. Downloads the two icons of selected choice ending with `empty.ico` and `full.ico`
+2. Changes the icon for **Recycle Bin (full)** with the icon ending with `full.ico` and **Recycle Bin (empty)** with `empty.ico`
+3. Modifies the [Registry](https://support.microsoft.com/en-us/windows/how-to-open-registry-editor-in-windows-10-deab38e6-91d6-e0aa-4b7c-8878d9e07b11), specifically **HKey_Current_User** > **Software** > **Microsoft** > **Windows** > **CurrentVersion** > **Explorer** > **CLSID** > **{645FF...}** > **DefaultIcon**
+4. Edits the files (**Default**, **empty**, and **full**) and in the **Value Data** adds a **comma** and **0** at the end after **.ico**. (It will look like `.ico,0`)
 
 *Credits: https://reddit.com/r/pcmasterrace/comments/uvtdbx/cat_bin/i9nn1pq/*
 
-## Or run in powershell:
-```
-iwr -useb https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/binutil.ps1 | iex
-```
+
 
 
 ## Contribution
