@@ -54,7 +54,7 @@ if ($choice -eq 0) {
   exit
 }
 
-$selected_theme=$args[0]
+$selected_theme=$param1
 $selected_theme = $supported_themes[$choice - 1]
 
 $empty_icon_url = "https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/$selected_theme/$selected_theme-empty.ico"
