@@ -27,26 +27,32 @@ select theme in "${themes[@]}"; do
         "pop-cat")
             echo "You selected $theme!"
 	    # optionally call a function or run some code here
-            ;;
+            break
+	    ;;
         "patrick-star")
             echo "You selected $theme!"
 	    # optionally call a function or run some code here
-            ;;
+            break
+	    ;;
         "dachshund")
             echo "You selected $theme!"
 	    # optionally call a function or run some code here
+	    break
 	    ;;
         "minecraft")
             echo "You selected $theme!"
 	    # optionally call a function or run some code here
+	    break
 	    ;;
         "french-fries")
             echo "You selected $theme!"
 	    # optionally call a function or run some code here
+	    break
 	    ;;
         "mac-pro")
             echo "You selected $theme!"
 	    # optionally call a function or run some code here
+	    break
 	    ;;
         "Default")
             echo "You selected the default! Reverting to regular recycle bin"
