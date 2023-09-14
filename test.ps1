@@ -15,3 +15,5 @@ Write-Host @"
              |__/ $version by TechnoLuc
 
 "@ -ForegroundColor Magenta
+
+Read-Host -Prompt "Press any key to continue..."
