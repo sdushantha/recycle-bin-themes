@@ -2,7 +2,7 @@
 if (-not ([System.Security.Principal.WindowsPrincipal] [System.Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)) {
     # Script opnieuw aanroepen met beheerdersrechten
     $scriptPath = $MyInvocation.MyCommand.Definition
-    Start-Process powershell.exe -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$scriptPath`"" -Verb RunAs
+    Start-Process powershell.exe -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"& { Set-ExecutionPolicy Bypass -Scope Process; & '$scriptPath' }`"" -Verb RunAs
     exit
 }
 
