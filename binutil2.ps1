@@ -6,14 +6,16 @@
 # Define the version of the script
 $version = "v2.0.0"
 
-# This is the directory where icons will be stored
+# This is where we will store the icons
 $recycle_bin_themes_path = "$env:userprofile\Pictures\RecycleBinThemes"
 
-# Hide the progress bar output from Invoke-WebRequest
+# Hide the progressbar from Invoke-WebRequest
 $ProgressPreference = "SilentlyContinue"
 
-# List of supported themes
-$supported_themes = @("pop-cat", "dachshund", "patrick-star", "kirby", "sword-kirby", "minecraft-chest", "french-fries", "bulbasaul")
+# Fetch the folder names (theme names) dynamically from the GitHub repository
+$github_repo_url = "https://api.github.com/repos/technoluc/recycle-bin-themes/contents/themes"
+$github_repo_contents = Invoke-RestMethod -Uri $github_repo_url -Headers @{ "User-Agent" = "PowerShell" }
+$supported_themes = $github_repo_contents | Where-Object { $_.type -eq "dir" } | ForEach-Object { $_.name }
 
 # Display a colorful header with script information
 Write-Host @"
@@ -22,6 +24,7 @@ Write-Host @"
  |   / -_) _| || / _| / -_) | _ \ | ' \    | | | ' \/ -_) '  \/ -_|_-<
  |_|_\___\__|\_, \__|_\___| |___/_|_||_|   |_| |_||_\___|_|_|_\___/__/
              |__/ $version by TechnoLuc
+
 "@ -ForegroundColor Magenta
 
 # Prepare to capitalize theme names for display
