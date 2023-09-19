@@ -1,10 +1,9 @@
 # Created by Siddharth Dushantha
 # https://github.com/sdushantha/recycle-bin-themes
 # Edited by TechnoLuc
-#
 
 # Define the version of the script
-$version = "v2.0.0"
+$version = "v3.0.0"
 
 # This is where we will store the icons
 $recycle_bin_themes_path = "$env:userprofile\Pictures\RecycleBinThemes"
