@@ -1,9 +1,8 @@
 # Created by Siddharth Dushantha
 # https://github.com/sdushantha/recycle-bin-themes
-# Edited by TechnoLuc
 
 # Define the version of the script
-$version = "v3.0.0"
+$version = "v1.0.1"
 
 # This is where we will store the icons
 $recycle_bin_themes_path = "$env:userprofile\Pictures\RecycleBinThemes"
@@ -12,7 +11,7 @@ $recycle_bin_themes_path = "$env:userprofile\Pictures\RecycleBinThemes"
 $ProgressPreference = "SilentlyContinue"
 
 # Fetch the folder names (theme names) dynamically from the GitHub repository
-$github_repo_url = "https://api.github.com/repos/technoluc/recycle-bin-themes/contents/themes"
+$github_repo_url = "https://api.github.com/repos/sdushantha/recycle-bin-themes/contents/themes"
 $github_repo_contents = Invoke-RestMethod -Uri $github_repo_url -Headers @{ "User-Agent" = "PowerShell" }
 $supported_themes = $github_repo_contents | Where-Object { $_.type -eq "dir" } | ForEach-Object { $_.name }
 
@@ -22,7 +21,7 @@ Write-Host @"
  | _ \___ __ _  _ __| |___  | _ |_)_ _   |_   _| |_  ___ _ __  ___ ___
  |   / -_) _| || / _| / -_) | _ \ | ' \    | | | ' \/ -_) '  \/ -_|_-<
  |_|_\___\__|\_, \__|_\___| |___/_|_||_|   |_| |_||_\___|_|_|_\___/__/
-             |__/ $version by TechnoLuc
+             |__/ 
 
 "@ -ForegroundColor Magenta
 
@@ -69,8 +68,8 @@ if ($choice -eq 0) {
 
 # Retrieve the selected theme's icon URLs
 $selected_theme = $supported_themes[$choice - 1]
-$empty_icon_url = "https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/$selected_theme/$selected_theme-empty.ico"
-$full_icon_url = "https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/$selected_theme/$selected_theme-full.ico"
+$empty_icon_url = "https://raw.githubusercontent.com/sdushantha/recycle-bin-themes/main/themes/$selected_theme/$selected_theme-empty.ico"
+$full_icon_url = "https://raw.githubusercontent.com/sdushantha/recycle-bin-themes/main/themes/$selected_theme/$selected_theme-full.ico"
 
 # Extract file names from the URLs
 $empty_icon_file_name = $empty_icon_url.Split("/")[-1]
